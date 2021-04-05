@@ -1,0 +1,145 @@
+﻿body {
+    background-color: powderblue;
+}
+
+h1 {
+    font-family: monospace: bold;
+    color: white;
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+}
+
+p {
+    font-family: 'Courier New';
+    font-size: 30px;
+    color: antiquewhite;
+    font-weight: bold;
+    text-shadow: 0 13.36px 8.896px rgba(51, 110, 123, 1),0 -2px 1px #fff;
+    text-align: center;
+}
+
+iframe {
+    box-shadow: 0 0 10px;
+    
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Datillo';
+    src: url('https://rwt.io/_demo_fonts/datillo/DattiloDJRBannerVariable-VF.woff2') format('woff2 supports variations'), url('https://rwt.io/_demo_fonts/datillo/DattiloDJRBannerVariable-VF.woff2') format('woff2-variations');
+    font-stretch: normal;
+    font-weight: 200 900;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f1f1fa;
+    color: #224;
+    font-family: 'Datillo', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: "Datillo", serif;
+    font-size: calc( 2vw + 2.5em );
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.overlap span {
+    /* set up transparency and overlap */
+    color: rgba(51, 110, 123, 1);
+    letter-spacing: -0.135em;
+    line-height: 0.7;
+    position: relative;
+    word-spacing: 0.75em;
+}
+
+    .overlap span::before {
+        content: attr(data-content);
+        color: rgba(125,20,0,.75);
+        font-weight: 750;
+        line-height: 1;
+        opacity: 0.35;
+        position: absolute;
+        top: 0.1em;
+        left: -0.05em;
+    }
+
+    /* Play with the second solid fill color and opacity */
+    .overlap span:nth-child(odd)::before {
+        color: rgba(0,0,75,.14);
+    }
+
+    .overlap span:nth-child(5n+1)::before {
+        color: rgba(35,50,00,.15);
+    }
+
+    .overlap span:nth-child(7n+0)::before {
+        color: rgba(0,80,95,.25);
+    }
+
+    .overlap span::after {
+        content: attr(data-content);
+        color: transparent;
+        font-weight: 900;
+        line-height: 1;
+        position: absolute;
+        top: 0.1em;
+        left: 0;
+        -webkit-text-stroke: 0.01em black;
+        text-stroke: 0.01em black;
+    }
+
+    /* mix up the letter outlines a bit */
+    .overlap span:nth-child(odd)::after {
+        -webkit-text-stroke: 0.01em black;
+        text-stroke: 0.01em black;
+        left: -0.0025em;
+        top: 0.12em;
+        opacity: 0.7;
+    }
+
+    .overlap span:nth-child(5n+1)::after {
+        -webkit-text-stroke: 0.03em rgba(70,80,95,.9);
+        text-stroke: 0.03em rgba(70,80,95,.9);
+        left: 0.05em;
+        opacity: 0.7;
+    }
+
+    .overlap span:nth-child(4n+3)::after {
+        -webkit-text-stroke: 0.02em black;
+        text-stroke: 0.02em black;
+        top: 0.125em;
+        left: 0.015em;
+        opacity: 0.7;
+    }
+
+    .overlap span:nth-child(7n+0)::after {
+        -webkit-text-stroke: 0.015em black;
+        text-stroke: 0.015em black;
+        left: -0.025em;
+        top: 0.072em;
+        opacity: 0.7;
+    }
+
+.content-container {
+    max-width: 80vw;
+    margin: 2rem auto;
+}
